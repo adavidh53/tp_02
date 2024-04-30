@@ -30,7 +30,34 @@ class Dado{
        point(this.posicion.x+30, this.posicion.y+30);
        break;
      }
+      case 4:{
+       strokeWeight(20);
+       point(this.posicion.x-30, this.posicion.y-30);
+       point(this.posicion.x+30, this.posicion.y+30);
+       point(this.posicion.x+30, this.posicion.y-30);
+       point(this.posicion.x-30, this.posicion.y+30);
+       break;
+     }
+     case 5:{
+       strokeWeight(20);
+       point(this.posicion.x-30, this.posicion.y-30);
+       point(this.posicion.x+30, this.posicion.y+30);
+       point(this.posicion.x, this.posicion.y);
+       point(this.posicion.x+30, this.posicion.y-30);
+       point(this.posicion.x-30, this.posicion.y+30);
+       break;
+     }
      
+     case 6:{
+       strokeWeight(20);
+       point(this.posicion.x-30, this.posicion.y-30);
+       point(this.posicion.x+30, this.posicion.y+30);
+       point(this.posicion.x-30, this.posicion.y-30);
+       point(this.posicion.x+30, this.posicion.y-30);
+       point(this.posicion.x+30, this.posicion.y-30);
+       point(this.posicion.x-30, this.posicion.y+30);
+       break;
+     }
      
      
    }//fin switch
@@ -49,7 +76,7 @@ class Dado{
  }
  
   public void tirarDado(){
-   this.valor=3; //int (random(1,7));
+   this.valor=6; //int (random(1,7));
      
  }
 
